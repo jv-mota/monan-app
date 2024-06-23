@@ -1,0 +1,185 @@
+/* -----| Fonte-Rawline |----- */
+@import url('https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css');
+
+/* -----| Variáveis-CSS |----- */
+:root {
+  /* header */
+  --header-height: 3rem;
+
+  /* colors */
+  --white: #FFFFFF;
+  --black: #000000;
+  --title-orange: #E52207;  
+
+  /* Font and Typography */
+  --body-font: "Rawline", sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --big-font: 3.5rem;
+  --h1: 2.25rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --standard: 1rem;
+  --small: 0.875rem;
+  --smaller: 0.813rem;
+  --tiny: 0.625rem;
+
+  /* Font Weight */
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+
+  /* Margenes Bottom */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* -----| Tipografia Responsiva |----- */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font: 2.5rem;
+    --h1: 1.5rem;
+    --h2: 1.25rem;
+    --h3: 1rem;
+    --standard: 0.938rem;
+    --small: 0.813rem;
+    --smaller: 0.75rem;    
+  }
+}
+
+/* -----| Base |----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal);  
+}
+
+body {
+  background-color: var(--black);
+  color: var(--black);  
+}
+
+h1, h2, h3 {
+  color: var(--white);
+  font-size: var(--bold);  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -----| Classes CSS |----- */
+.section {
+  padding: 0 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1);
+  color: var(--title-orange);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* -----| Layout |----- */
+.container {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* -----| Botões |----- */
+.button {
+  display: inline-block;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--medium);  
+}
+
+.button:hover {
+  background-color: var(--title-orange);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* -----| Break-Points |----- */
+/* For large devices */
+@media screen and (max-width: 992px) {
+  
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+  
+}
+
+/* For smaller devices */
+@media screen and (max-width: 350px) {
+  
+}

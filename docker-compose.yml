@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development # Define o estágio de desenvolvimento
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
+
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build # Define o estágio de produção
+    ports:
+      - '80:80'
+    environment:
+      - NODE_ENV=production

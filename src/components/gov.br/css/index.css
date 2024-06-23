@@ -1,0 +1,158 @@
+body{
+    background-color: #f8f8f8;
+}
+.tab-pane {
+    margin: 1.2em;
+}
+
+.header-sign {
+    margin-left: 16px;
+}
+
+.navbar-expand-lg {
+    box-shadow: 0 7px 10px -10px #333;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*Itens que se repetem muitas vezes e podem ser reaproveitados*/
+
+.cptec-card{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #88888885;
+    box-shadow: 5px 5px 9px 5px #0000000e;
+    border-radius: 5px;
+    font-size: medium;
+}
+.sombra{
+    box-shadow: 5px 5px 9px 5px #0000000e;
+}
+.borda{
+    border: 1px solid #88888885;
+}
+.destaque {
+    color: black;
+    font-weight: 600;
+}
+
+.centro-tabela td {
+    text-align: center;
+    justify-content: center;
+}
+
+.centro {
+    text-align: center;
+    justify-content: center;
+}
+
+.justificado{
+    text-align: justify;
+}
+.sem-hover {
+    pointer-events: none;
+}
+
+.invisivel {
+    visibility: hidden;
+}
+
+.botoes-centro {
+    justify-content: center;
+    text-align: center;
+}
+
+.botoes-centro a {
+    margin-top: 10px;
+}
+
+/*Modificações no Bootstrap e GovBr*/
+.bg-branco {
+    background-color: white;
+}
+
+.pd-10{
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.br-card {
+    --card-padding: ;
+    border-radius: 5px;
+    padding: 1em 0 1em 2em;
+}
+
+/*MODIFICAÇÕES DE TAMANHOS (mobile, tablet, desktop): */
+/* TAMANHO PEQUENO */
+@media screen and (min-width: 0px) and (max-width: 990px) {
+        
+    /*itens repetidos*/
+    .centro-pequeno {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desaparece-pequeno {
+        display: none;
+    }
+
+    .invisivel-pequeno {
+        visibility: hidden;
+    }
+    /*modificações no bootstrap*/
+    .container-fluid {
+        padding-bottom: 10px;
+    }
+}
+
+/* TAMANHO MÉDIO */
+@media screen and (min-width: 991px) and (max-width: 1599px) {
+    /*itens repetidos*/
+    .desaparece-medio {
+        display: none;
+    }
+
+    /*modificações no govbr*/
+    .br-footer .br-list.horizontal .br-item,
+    .br-footer .br-list.horizontal .br-list .br-item {
+        min-height: 0em;
+    }
+
+}
+
+/* TAMANHO GRANDE  */
+@media screen and (min-width: 1600px) and (max-width: 9999px) {
+    /*itens repetidos*/
+    .desaparece-grande {
+        display: none;
+    }
+
+    .remover-grande {
+        display: none;
+    }
+
+    /* CAMPO: Botão aviso */
+    .botao-aviso {
+        margin: 5px 0px 0px 19px;
+        width: 590px;
+    }
+
+    .satelite p {
+        margin-bottom: 15px;
+    }
+    .satelite img {
+        width: 590px;
+        height: 480px;
+    }
+
+    /*modificações no govbr*/
+    .br-footer .br-list.horizontal .br-item,
+    .br-footer .br-list.horizontal .br-list .br-item {
+        min-height: 0em;
+    }
+
+}
